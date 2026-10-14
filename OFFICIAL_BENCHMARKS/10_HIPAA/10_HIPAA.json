@@ -1,0 +1,21 @@
+{
+ "framework": "10_HIPAA",
+ "title": "HIPAA Security Rule (45 CFR 164)",
+ "project": "DJANGO_HEALTH_CHECK",
+ "basis": [
+  {
+   "check": "08_soc2_type2",
+   "status": "PASS",
+   "observed": "framework=SOC 2 (TSC 2017 revised 2022) controls=9 verified="
+  },
+  {
+   "check": "04_sbom_cyclonedx",
+   "status": "PASS",
+   "observed": "format=CycloneDX specVersion=1.5 components=272 with_sha256="
+  }
+ ],
+ "verdict": "CONTROLS EVIDENCED \u2014 all basis checks PASS",
+ "pax_provenance": "Run ID loiskleinner/pax-benchmark-runner v3, 2026-10-02, Kaggle T4 x2 (2x 16GB VRAM), Ubuntu 22.04, Python 3.12. These are PAX L5 Narrow L2 General 27B model-level results \u2014 shared model component, not this project's verdict.",
+ "bench_sha3": "8fd98d4c3ebab6b9f20c8c815b6b2b289c58a212b7add60e2ff2a21915657b26",
+ "register_sha3": "04cf4fb5891060cc04e464013bd9d735ba86258ce51b5ed7cac8695971aa8531"
+}

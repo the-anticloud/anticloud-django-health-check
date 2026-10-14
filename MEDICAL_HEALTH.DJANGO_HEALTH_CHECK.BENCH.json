@@ -1,0 +1,639 @@
+{
+  "schema": "anticloud.bench17/1",
+  "project": "DJANGO_HEALTH_CHECK",
+  "category": "MEDICAL_HEALTH",
+  "run_timestamp_utc": "2026-10-05T14:23:01Z",
+  "runner": "E:/opencode-work/tier_agents/_tools/bl_common.py + bl_run.py",
+  "clone_dir_name": "UPSTREAM_CLONE",
+  "clone_path": "E:\\fenta\\Downloads\\The Anticloud\\ANTICLOUD_REPOS\\MEDICAL_HEALTH\\DJANGO_HEALTH_CHECK\\UPSTREAM_CLONE",
+  "excluded_by_policy": [
+    "all AI/LLM latency and throughput benchmarks",
+    "no model downloaded; pytorch/torch/transformers never imported"
+  ],
+  "status": "BENCHMARKED",
+  "benchmarks": {
+    "01_loc_file_counts": {
+      "status": "MEASURED",
+      "total_files_in_tree": 38,
+      "walk_truncated_at_cap": false,
+      "source_and_doc_files_counted": 28,
+      "files_skipped_over_4mb": 0,
+      "total_loc": 1682,
+      "blank_lines": 521,
+      "comment_lines": 432,
+      "sloc_estimate": 1250,
+      "primary_language": "Python",
+      "primary_language_loc": 1339,
+      "languages": [
+        {
+          "language": "Python",
+          "loc": 1339,
+          "files": 23
+        },
+        {
+          "language": "Make",
+          "loc": 213,
+          "files": 2
+        },
+        {
+          "language": "reStructuredText",
+          "loc": 129,
+          "files": 2
+        },
+        {
+          "language": "Text",
+          "loc": 1,
+          "files": 1
+        }
+      ],
+      "files_by_extension": {
+        ".py": 23,
+        ".mk": 2,
+        ".rst": 2,
+        ".txt": 1
+      },
+      "method": "physical line count of every code/doc file in the real clone"
+    },
+    "02_licence_detection": {
+      "status": "MEASURED",
+      "id": "MIT",
+      "file": "LICENSE",
+      "confidence": "high",
+      "text_bytes": 1075,
+      "sha256": "ac50ceee3acfd77b",
+      "copyright_years": [
+        "2015"
+      ],
+      "copyright_holders": [],
+      "non_commercial_signal": null,
+      "licence_class": "A",
+      "class_basis": "MIT verified in LICENSE",
+      "class_meaning": "Permissive. May ship inside Anticommons derivatives with attribution and licence notice retained.",
+      "ship_policy": "MAY_SHIP_WITH_ANTICOMMONS_AND_ATTRIBUTION",
+      "packaging_declarations": [
+        {
+          "id": "MIT",
+          "file": "setup.py",
+          "kind": "packaging_metadata"
+        }
+      ],
+      "licence_files_examined": [
+        {
+          "file": "LICENSE",
+          "bytes": 1075,
+          "kind": "licence_text"
+        },
+        {
+          "file": "pyproject.toml",
+          "bytes": 492,
+          "kind": "packaging_metadata"
+        },
+        {
+          "file": "setup.py",
+          "bytes": 1553,
+          "kind": "packaging_metadata"
+        }
+      ],
+      "licence_files_examined_count": 3,
+      "default_rule": "unknown or absent licence = class C, never A",
+      "method": "licence text read from the tree and matched against the SPDX-style grant text"
+    },
+    "03_dependency_scan": {
+      "status": "MEASURED",
+      "manifests": [
+        {
+          "manifest": "Makefile",
+          "ecosystem": "make",
+          "declared": 0,
+          "sample": []
+        },
+        {
+          "manifest": "pyproject.toml",
+          "ecosystem": "pypi",
+          "declared": 6,
+          "sample": [
+            "THIRDPARTY",
+            "django_healthchecks",
+            "setuptools.build_meta",
+            "src",
+            "tests",
+            "wheel"
+          ]
+        },
+        {
+          "manifest": "setup.cfg",
+          "ecosystem": "pypi",
+          "declared": 0,
+          "sample": []
+        },
+        {
+          "manifest": "setup.py",
+          "ecosystem": "pypi",
+          "declared": 7,
+          "sample": [
+            "1.5.0",
+            "MIT",
+            "README.rst",
+            "django-healthchecks",
+            "docs",
+            "src",
+            "test"
+          ]
+        },
+        {
+          "manifest": "docs/Makefile",
+          "ecosystem": "make",
+          "declared": 2,
+          "sample": [
+            "bundle.",
+            "qcollectiongenerator"
+          ]
+        },
+        {
+          "manifest": "docs/requirements.txt",
+          "ecosystem": "pypi",
+          "declared": 1,
+          "sample": [
+            ".[docs]"
+          ]
+        }
+      ],
+      "manifest_count": 6,
+      "ecosystems": {
+        "make": 2,
+        "pypi": 14
+      },
+      "declared_packages_total": 16,
+      "lockfiles_on_disk": [],
+      "lockfile_count": 0,
+      "reproducible_build_evidence": false,
+      "method": "manifests parsed from the real tree"
+    },
+    "04_sbom": {
+      "status": "MEASURED",
+      "format": "CycloneDX 1.5",
+      "component_count": 23,
+      "components_with_purl": 23,
+      "artifact": "E:\\fenta\\Downloads\\The Anticloud\\ANTICLOUD_REPOS\\MEDICAL_HEALTH\\DJANGO_HEALTH_CHECK\\sbom\\sbom.cdx.json",
+      "serial_number": "urn:uuid:f7f50ac1-0000-0000-4000-abc4c9c69672",
+      "licence_asserted_in_sbom": "MIT",
+      "licence_class_in_sbom": "A",
+      "method": "dependency manifests actually present in the working tree; zero imports invented"
+    },
+    "05_git_health": {
+      "status": "MEASURED",
+      "is_git_clone": true,
+      "head_sha": "37e548e8ee2bf15b1afb98f078ee54ec63f1e621",
+      "head_short": "37e548e8ee2b",
+      "head_date": "2022-06-12T11:44:01+02:00",
+      "head_subject": "Bump version: 1.4.2 -> 1.5.0",
+      "head_author": "Mike Dingjan <m.dingjan@labdigital.nl>",
+      "remote_url": "https://github.com/labd/django-healthchecks",
+      "is_shallow": true,
+      "commits_in_clone": 1,
+      "tracked_files": 40,
+      "local_and_remote_branches": 1,
+      "tags": 0,
+      "working_tree_dirty_entries": 0,
+      "ci_config": [
+        ".github/workflows (python-release.yml,python-test.yml)"
+      ],
+      "ci_present": true,
+      "method": "git plumbing run against the on-disk repo"
+    },
+    "06_security_config_owasp_llm_top10": {
+      "status": "MEASURED",
+      "upstream_security_files": 0,
+      "project_security_files": 123,
+      "total_evidence_files": 123,
+      "upstream_examples": [],
+      "project_examples": [
+        "16_VULNERABILITY_MANAGEMENT/README.md",
+        "16_VULNERABILITY_MANAGEMENT/VULNERABILITY_MANAGEMENT.docx",
+        "16_VULNERABILITY_MANAGEMENT/VULNERABILITY_MANAGEMENT.html",
+        "16_VULNERABILITY_MANAGEMENT/VULNERABILITY_MANAGEMENT.md",
+        "16_VULNERABILITY_MANAGEMENT/VULNERABILITY_MANAGEMENT.pdf",
+        "16_VULNERABILITY_MANAGEMENT/VULNERABILITY_MANAGEMENT.pptx",
+        "16_VULNERABILITY_MANAGEMENT/VULNERABILITY_MANAGEMENT.txt",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP.docx",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP.html",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP.md",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP.pdf",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP.pptx",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP.txt",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.docx",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.html",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.json",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.md",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.pdf",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.pptx",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.txt"
+      ],
+      "llm_specific_artifacts": [],
+      "method": "inventory of real security/audit/threat artefacts in clone and Anticommons folder"
+    },
+    "07_security_config_owasp_top10": {
+      "status": "MEASURED",
+      "evidence_file_count": 21,
+      "files": [
+        "OFFICIAL_BENCHMARKS/03_OWASP.md",
+        "OFFICIAL_BENCHMARKS/05_OWASP.docx",
+        "OFFICIAL_BENCHMARKS/05_OWASP.html",
+        "OFFICIAL_BENCHMARKS/05_OWASP.md",
+        "OFFICIAL_BENCHMARKS/05_OWASP.pdf",
+        "OFFICIAL_BENCHMARKS/05_OWASP.pptx",
+        "OFFICIAL_BENCHMARKS/05_OWASP.txt",
+        "OFFICIAL_BENCHMARKS/08_OWASP_LLM_Top10/08_OWASP_LLM_Top10.docx",
+        "OFFICIAL_BENCHMARKS/08_OWASP_LLM_Top10/08_OWASP_LLM_Top10.html",
+        "OFFICIAL_BENCHMARKS/08_OWASP_LLM_Top10/08_OWASP_LLM_Top10.json",
+        "OFFICIAL_BENCHMARKS/08_OWASP_LLM_Top10/08_OWASP_LLM_Top10.md",
+        "OFFICIAL_BENCHMARKS/08_OWASP_LLM_Top10/08_OWASP_LLM_Top10.pdf",
+        "OFFICIAL_BENCHMARKS/08_OWASP_LLM_Top10/08_OWASP_LLM_Top10.pptx",
+        "OFFICIAL_BENCHMARKS/08_OWASP_LLM_Top10/08_OWASP_LLM_Top10.txt",
+        "OFFICIAL_BENCHMARKS/09_OWASP_Top10/09_OWASP_Top10.docx",
+        "OFFICIAL_BENCHMARKS/09_OWASP_Top10/09_OWASP_Top10.html",
+        "OFFICIAL_BENCHMARKS/09_OWASP_Top10/09_OWASP_Top10.json",
+        "OFFICIAL_BENCHMARKS/09_OWASP_Top10/09_OWASP_Top10.md",
+        "OFFICIAL_BENCHMARKS/09_OWASP_Top10/09_OWASP_Top10.pdf",
+        "OFFICIAL_BENCHMARKS/09_OWASP_Top10/09_OWASP_Top10.pptx",
+        "OFFICIAL_BENCHMARKS/09_OWASP_Top10/09_OWASP_Top10.txt"
+      ],
+      "note": "OWASP Top 10 coverage is evidenced by security policy and audit artefacts that exist on disk; absent files are reported as absent, never asserted"
+    },
+    "08_soc1": {
+      "status": "MEASURED",
+      "control_family": "soc1",
+      "evidence_file_count": 5,
+      "evidence_score": 15,
+      "project_doc_files_scanned": 293,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/03_SOC1.md",
+        "OFFICIAL_BENCHMARKS/03_SOC1.txt",
+        "OFFICIAL_BENCHMARKS/03_SOC1_TypeII/03_SOC1_TypeII.json",
+        "OFFICIAL_BENCHMARKS/03_SOC1_TypeII/03_SOC1_TypeII.md",
+        "OFFICIAL_BENCHMARKS/03_SOC1_TypeII/03_SOC1_TypeII.txt"
+      ],
+      "matched_tokens_top": [
+        "soc1",
+        "soc1",
+        "soc1"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "09_soc2_typeii": {
+      "status": "MEASURED",
+      "control_family": "soc2_typeii",
+      "evidence_file_count": 8,
+      "evidence_score": 33,
+      "project_doc_files_scanned": 294,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/02_SOC2_TypeII/02_SOC2_TypeII.json",
+        "OFFICIAL_BENCHMARKS/02_SOC2_TypeII/02_SOC2_TypeII.md",
+        "OFFICIAL_BENCHMARKS/02_SOC2_TypeII/02_SOC2_TypeII.txt",
+        "OFFICIAL_BENCHMARKS/02_SOC2.md",
+        "OFFICIAL_BENCHMARKS/02_SOC2.txt",
+        "OFFICIAL_BENCHMARKS/03_SOC1_TypeII/03_SOC1_TypeII.json",
+        "OFFICIAL_BENCHMARKS/03_SOC1_TypeII/03_SOC1_TypeII.md",
+        "OFFICIAL_BENCHMARKS/03_SOC1_TypeII/03_SOC1_TypeII.txt"
+      ],
+      "matched_tokens_top": [
+        "soc2",
+        "typeii",
+        "soc2",
+        "typeii",
+        "soc2",
+        "typeii"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "10_nist_ai_rmf": {
+      "status": "MEASURED",
+      "control_family": "nist_ai_rmf",
+      "evidence_file_count": 6,
+      "evidence_score": 27,
+      "project_doc_files_scanned": 294,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/04_NIST_AI_RMF/04_NIST_AI_RMF.json",
+        "OFFICIAL_BENCHMARKS/04_NIST_AI_RMF/04_NIST_AI_RMF.md",
+        "OFFICIAL_BENCHMARKS/04_NIST_AI_RMF/04_NIST_AI_RMF.txt",
+        "16_VULNERABILITY_MANAGEMENT/README.md",
+        "16_VULNERABILITY_MANAGEMENT/VULNERABILITY_MANAGEMENT.md",
+        "16_VULNERABILITY_MANAGEMENT/VULNERABILITY_MANAGEMENT.txt"
+      ],
+      "matched_tokens_top": [
+        "nist_ai_rmf",
+        "ai_rmf",
+        "nist_ai_rmf",
+        "ai_rmf",
+        "nist_ai_rmf",
+        "ai_rmf"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "11_nist_sp800_53": {
+      "status": "MEASURED",
+      "control_family": "nist_sp800_53",
+      "evidence_file_count": 3,
+      "evidence_score": 18,
+      "project_doc_files_scanned": 294,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/05_NIST_SP800_53/05_NIST_SP800_53.json",
+        "OFFICIAL_BENCHMARKS/05_NIST_SP800_53/05_NIST_SP800_53.md",
+        "OFFICIAL_BENCHMARKS/05_NIST_SP800_53/05_NIST_SP800_53.txt"
+      ],
+      "matched_tokens_top": [
+        "800_53",
+        "sp800_53",
+        "800_53",
+        "sp800_53",
+        "800_53",
+        "sp800_53"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "12_nist_csf": {
+      "status": "MEASURED",
+      "control_family": "nist_csf",
+      "evidence_file_count": 6,
+      "evidence_score": 27,
+      "project_doc_files_scanned": 294,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/06_NIST_CSFW/06_NIST_CSFW.json",
+        "OFFICIAL_BENCHMARKS/06_NIST_CSFW/06_NIST_CSFW.md",
+        "OFFICIAL_BENCHMARKS/06_NIST_CSFW/06_NIST_CSFW.txt",
+        "15_DISASTER_RECOVERY/DISASTER_RECOVERY.md",
+        "15_DISASTER_RECOVERY/DISASTER_RECOVERY.txt",
+        "15_DISASTER_RECOVERY/README.md"
+      ],
+      "matched_tokens_top": [
+        "nist_csf",
+        "csfw",
+        "nist_csf",
+        "csfw",
+        "nist_csf",
+        "csfw"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "13_fedramp": {
+      "status": "MEASURED",
+      "control_family": "fedramp",
+      "evidence_file_count": 8,
+      "evidence_score": 24,
+      "project_doc_files_scanned": 294,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/01_FedRAMP.md",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP.txt",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.json",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.md",
+        "OFFICIAL_BENCHMARKS/01_FedRAMP/01_FedRAMP.txt",
+        "OFFICIAL_BENCHMARKS/13_FISMA/13_FISMA.json",
+        "OFFICIAL_BENCHMARKS/13_FISMA/13_FISMA.md",
+        "OFFICIAL_BENCHMARKS/13_FISMA/13_FISMA.txt"
+      ],
+      "matched_tokens_top": [
+        "fedramp",
+        "fedramp",
+        "fedramp"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "14_pci_dss": {
+      "status": "MEASURED",
+      "control_family": "pci_dss",
+      "evidence_file_count": 3,
+      "evidence_score": 18,
+      "project_doc_files_scanned": 294,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/11_PCI_DSS/11_PCI_DSS.json",
+        "OFFICIAL_BENCHMARKS/11_PCI_DSS/11_PCI_DSS.md",
+        "OFFICIAL_BENCHMARKS/11_PCI_DSS/11_PCI_DSS.txt"
+      ],
+      "matched_tokens_top": [
+        "pci",
+        "pci_dss",
+        "pci",
+        "pci_dss",
+        "pci",
+        "pci_dss"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "15_iso27001": {
+      "status": "MEASURED",
+      "control_family": "iso27001",
+      "evidence_file_count": 3,
+      "evidence_score": 9,
+      "project_doc_files_scanned": 294,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/07_ISO_27001/07_ISO_27001.json",
+        "OFFICIAL_BENCHMARKS/07_ISO_27001/07_ISO_27001.md",
+        "OFFICIAL_BENCHMARKS/07_ISO_27001/07_ISO_27001.txt"
+      ],
+      "matched_tokens_top": [
+        "iso_27001",
+        "iso_27001",
+        "iso_27001"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "16_mitre_attack_mapping": {
+      "status": "MEASURED",
+      "control_family": "mitre_attack",
+      "evidence_file_count": 3,
+      "evidence_score": 9,
+      "project_doc_files_scanned": 294,
+      "evidence_files": [
+        "OFFICIAL_BENCHMARKS/24_MITRE_ATTCK/24_MITRE_ATTCK.json",
+        "OFFICIAL_BENCHMARKS/24_MITRE_ATTCK/24_MITRE_ATTCK.md",
+        "OFFICIAL_BENCHMARKS/24_MITRE_ATTCK/24_MITRE_ATTCK.txt"
+      ],
+      "matched_tokens_top": [
+        "mitre",
+        "mitre",
+        "mitre"
+      ],
+      "method": "token scan of the project's own compliance documentation filenames; a FAIL here means no such evidence file exists on disk"
+    },
+    "17_ml_trl_readiness": {
+      "status": "MEASURED",
+      "framework": "Lavin, Weidner & Claus, 'Quantifying the maturity of machine learning for life sciences', Nature Methods 19, 1036-1039 (2022); TRL scale adapted for software/engineering artefacts",
+      "trl_level": 4,
+      "trl_scale": "1 = basic R&D idea; 9 = actual system proven in successful operations",
+      "level_reasons": [
+        "source tree present (design realised in code)",
+        "test files present (component validation)"
+      ],
+      "evidence": {
+        "test_files": 6,
+        "test_examples": [
+          "tests/conftest.py",
+          "tests/test_checker.py",
+          "tests/test_contrib.py",
+          "tests/test_heartbeats.py",
+          "tests/test_urls.py",
+          "tests/test_views.py"
+        ],
+        "source_files": 27,
+        "source_examples": [
+          ".editorconfig",
+          ".gitignore",
+          "CHANGES",
+          "LICENSE",
+          "Makefile",
+          "setup.py",
+          "docs/conf.py",
+          "docs/Makefile"
+        ],
+        "packaging_manifests": 2,
+        "packaging_examples": [
+          "pyproject.toml",
+          "setup.py"
+        ],
+        "deployment_files": 0,
+        "deployment_examples": [],
+        "documentation_files": 2,
+        "documentation_examples": [
+          "README.rst",
+          "docs/index.rst"
+        ],
+        "ci_config": [
+          ".github/workflows (python-release.yml,python-test.yml)"
+        ],
+        "sbom_artifact": true,
+        "security_policy_files": 123,
+        "security_policy_examples": []
+      },
+      "measured_from": "the cloned working tree file inventory, not from any project self-claim"
+    },
+    "00_shape_k_graphrag": {
+      "status": "PASS",
+      "checks_present": [
+        "01_loc_file_counts",
+        "02_licence_detection",
+        "03_dependency_scan",
+        "04_sbom",
+        "05_git_health",
+        "06_security_config_owasp_llm_top10",
+        "07_security_config_owasp_top10",
+        "08_soc1",
+        "09_soc2_typeii",
+        "10_nist_ai_rmf",
+        "11_nist_sp800_53",
+        "12_nist_csf",
+        "13_fedramp",
+        "14_pci_dss",
+        "15_iso27001",
+        "16_mitre_attack_mapping",
+        "17_ml_trl_readiness"
+      ],
+      "check_count": 17,
+      "required_15_present": true,
+      "mitre_present": true,
+      "trl_present": true,
+      "no_ai_latency_bench": true,
+      "no_torch_import": true,
+      "shape": "K_GRAPHRAG",
+      "threshold_source": "structural (check count and presence), never lowered",
+      "wall_seconds": 58.8
+    }
+  },
+  "source_anchors_read": {
+    "entry_points": [
+      "pyproject.toml",
+      "setup.py",
+      "sandbox/manage.py",
+      "sandbox/__init__.py",
+      "src/django_healthchecks/__init__.py",
+      "src/django_healthchecks/migrations/__init__.py"
+    ],
+    "src_dirs": [
+      ".editorconfig",
+      ".gitignore",
+      "CHANGES",
+      "LICENSE",
+      "Makefile",
+      "setup.py",
+      "docs/conf.py",
+      "docs/Makefile",
+      "sandbox/manage.py",
+      "sandbox/settings.py",
+      "sandbox/urls.py",
+      "sandbox/wsgi.py",
+      "sandbox/__init__.py",
+      "src/django_healthchecks/admin.py",
+      "src/django_healthchecks/checker.py",
+      "src/django_healthchecks/contrib.py",
+      "src/django_healthchecks/heartbeats.py",
+      "src/django_healthchecks/models.py",
+      "src/django_healthchecks/urls.py",
+      "src/django_healthchecks/views.py",
+      "src/django_healthchecks/__init__.py",
+      "tests/conftest.py",
+      "tests/test_checker.py",
+      "tests/test_contrib.py",
+      "tests/test_heartbeats.py",
+      "tests/test_urls.py",
+      "tests/test_views.py"
+    ],
+    "tests": [
+      "tests/conftest.py",
+      "tests/test_checker.py",
+      "tests/test_contrib.py",
+      "tests/test_heartbeats.py",
+      "tests/test_urls.py",
+      "tests/test_views.py"
+    ],
+    "deployment": [],
+    "build": [
+      "Makefile",
+      "docs/Makefile"
+    ],
+    "docs": [
+      "README.rst",
+      "docs/index.rst"
+    ],
+    "config": []
+  },
+  "licence_class": "A",
+  "licence_id": "MIT",
+  "ship_policy": "MAY_SHIP_WITH_ANTICOMMONS_AND_ATTRIBUTION",
+  "licence_class_meaning": "Permissive. May ship inside Anticommons derivatives with attribution and licence notice retained.",
+  "wall_seconds": 58.8,
+  "check_summary": {
+    "01_loc_file_counts": "MEASURED",
+    "02_licence_detection": "MEASURED",
+    "03_dependency_scan": "MEASURED",
+    "04_sbom": "MEASURED",
+    "05_git_health": "MEASURED",
+    "06_security_config_owasp_llm_top10": "MEASURED",
+    "07_security_config_owasp_top10": "MEASURED",
+    "08_soc1": "MEASURED",
+    "09_soc2_typeii": "MEASURED",
+    "10_nist_ai_rmf": "MEASURED",
+    "11_nist_sp800_53": "MEASURED",
+    "12_nist_csf": "MEASURED",
+    "13_fedramp": "MEASURED",
+    "14_pci_dss": "MEASURED",
+    "15_iso27001": "MEASURED",
+    "16_mitre_attack_mapping": "MEASURED",
+    "17_ml_trl_readiness": "MEASURED",
+    "00_shape_k_graphrag": "PASS"
+  },
+  "failures": [],
+  "independent_facts": {
+    "total_files_in_tree": 38,
+    "total_loc": 1682,
+    "primary_language": "Python",
+    "head_sha": "37e548e8ee2b",
+    "head_date": "2022-06-12T11:44:01+02:00",
+    "remote_url": "https://github.com/labd/django-healthchecks",
+    "sbom_components": 23,
+    "declared_packages": 16,
+    "trl_level": 4,
+    "licence_file": "LICENSE",
+    "licence_sha256_16": "ac50ceee3acfd77b"
+  },
+  "project_fingerprint_sha256": "2449911c3ec3800880d27487d7e79397a0f6cec6cc6307c91fc6ba316a0b2d3a",
+  "fingerprint_note": "sha256 of this project's own measured body with its own name and category normalised out; identical fingerprints between two projects would mean templated data"
+}

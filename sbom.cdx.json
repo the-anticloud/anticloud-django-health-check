@@ -1,0 +1,123 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:a93701fb-add3-59a4-9b04-0bfc46f55001",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-10-05T16:36:23Z",
+    "component": {
+      "type": "application",
+      "name": "DJANGO_HEALTH_CHECK",
+      "version": "37e548e8ee2b",
+      "bom-ref": "pkg:generic/anticloud/DJANGO_HEALTH_CHECK@37e548e8ee2b",
+      "purl": "pkg:generic/anticloud/DJANGO_HEALTH_CHECK@37e548e8ee2b",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "anticloud:source-commit",
+        "value": "37e548e8ee2bf15b1afb98f078ee54ec63f1e621"
+      },
+      {
+        "name": "anticloud:source-url",
+        "value": "https://github.com/labd/django-healthchecks"
+      },
+      {
+        "name": "anticloud:tier",
+        "value": "tier-agent"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "sphinx",
+      "version": ">=1.4.0",
+      "purl": "pkg:pypi/sphinx@1.4.0",
+      "bom-ref": "pypi/sphinx@>=1.4.0"
+    },
+    {
+      "type": "library",
+      "name": "pytest",
+      "version": "==6.2.5",
+      "purl": "pkg:pypi/pytest@6.2.5",
+      "bom-ref": "pypi/pytest@==6.2.5"
+    },
+    {
+      "type": "library",
+      "name": "pytest-django",
+      "version": "==3.9.0",
+      "purl": "pkg:pypi/pytest-django@3.9.0",
+      "bom-ref": "pypi/pytest-django@==3.9.0"
+    },
+    {
+      "type": "library",
+      "name": "requests-mock",
+      "version": "==1.8.0",
+      "purl": "pkg:pypi/requests-mock@1.8.0",
+      "bom-ref": "pypi/requests-mock@==1.8.0"
+    },
+    {
+      "type": "library",
+      "name": "freezegun",
+      "version": "==0.3.15",
+      "purl": "pkg:pypi/freezegun@0.3.15",
+      "bom-ref": "pypi/freezegun@==0.3.15"
+    },
+    {
+      "type": "library",
+      "name": "isort",
+      "version": "==5.0.6",
+      "purl": "pkg:pypi/isort@5.0.6",
+      "bom-ref": "pypi/isort@==5.0.6"
+    },
+    {
+      "type": "library",
+      "name": "flake8",
+      "version": "==3.8.3",
+      "purl": "pkg:pypi/flake8@3.8.3",
+      "bom-ref": "pypi/flake8@==3.8.3"
+    },
+    {
+      "type": "library",
+      "name": "flake8-blind-except",
+      "version": "==0.1.1",
+      "purl": "pkg:pypi/flake8-blind-except@0.1.1",
+      "bom-ref": "pypi/flake8-blind-except@==0.1.1"
+    },
+    {
+      "type": "library",
+      "name": "flake8-debugger",
+      "version": "==3.2.1",
+      "purl": "pkg:pypi/flake8-debugger@3.2.1",
+      "bom-ref": "pypi/flake8-debugger@==3.2.1"
+    },
+    {
+      "type": "library",
+      "name": "Django",
+      "version": ">=3.2",
+      "purl": "pkg:pypi/django@3.2",
+      "bom-ref": "pypi/Django@>=3.2"
+    },
+    {
+      "type": "library",
+      "name": "requests",
+      "version": ">=2.24.0",
+      "purl": "pkg:pypi/requests@2.24.0",
+      "bom-ref": "pypi/requests@>=2.24.0"
+    },
+    {
+      "type": "library",
+      "name": "certifi",
+      "version": ">=2020.6.20",
+      "purl": "pkg:pypi/certifi@2020.6.20",
+      "bom-ref": "pypi/certifi@>=2020.6.20"
+    }
+  ]
+}

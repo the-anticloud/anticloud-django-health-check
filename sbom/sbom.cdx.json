@@ -1,0 +1,304 @@
+{
+ "bomFormat": "CycloneDX",
+ "specVersion": "1.5",
+ "serialNumber": "urn:uuid:f7f50ac1-0000-0000-4000-abc4c9c69672",
+ "version": 1,
+ "metadata": {
+  "timestamp": "2026-10-05T14:23:03Z",
+  "tools": [
+   {
+    "vendor": "anticloud",
+    "name": "bench15_from_tree",
+    "version": "1.0"
+   }
+  ],
+  "component": {
+   "type": "application",
+   "name": "DJANGO_HEALTH_CHECK",
+   "version": "37e548e8ee2b",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ]
+  },
+  "properties": [
+   {
+    "name": "anticloud:sbom:method",
+    "value": "manifest scan of the real cloned working tree"
+   },
+   {
+    "name": "anticloud:licence_class",
+    "value": "A"
+   },
+   {
+    "name": "anticloud:upstream",
+    "value": "https://github.com/labd/django-healthchecks"
+   }
+  ]
+ },
+ "components": [
+  {
+   "type": "library",
+   "name": "line_length",
+   "group": "pypi",
+   "version": "88",
+   "purl": "pkg:pypi/line_length",
+   "scope": "required",
+   "evidence": {
+    "manifest": "pyproject.toml"
+   }
+  },
+  {
+   "type": "library",
+   "name": "multi_line_output",
+   "group": "pypi",
+   "version": "3",
+   "purl": "pkg:pypi/multi_line_output",
+   "scope": "required",
+   "evidence": {
+    "manifest": "pyproject.toml"
+   }
+  },
+  {
+   "type": "library",
+   "name": "from",
+   "group": "pypi",
+   "version": "setuptools import find_packages, setup",
+   "purl": "pkg:pypi/from",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "docs_require",
+   "group": "pypi",
+   "version": "= [",
+   "purl": "pkg:pypi/docs_require",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "tests_require",
+   "group": "pypi",
+   "version": "= [",
+   "purl": "pkg:pypi/tests_require",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "setup",
+   "group": "pypi",
+   "version": "(",
+   "purl": "pkg:pypi/setup",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "name",
+   "group": "pypi",
+   "version": "=\"django-healthchecks\",",
+   "purl": "pkg:pypi/name",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "version",
+   "group": "pypi",
+   "version": "=\"1.5.0\",",
+   "purl": "pkg:pypi/version",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "description",
+   "group": "pypi",
+   "version": "=\"Simple Django app/framework to publish health checks\",",
+   "purl": "pkg:pypi/description",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "long_description",
+   "group": "pypi",
+   "version": "=open(\"README.rst\", \"r\").read(),",
+   "purl": "pkg:pypi/long_description",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "url",
+   "group": "pypi",
+   "version": "=\"https://github.com/mvantellingen/django-healthchecks\",",
+   "purl": "pkg:pypi/url",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "author",
+   "group": "pypi",
+   "version": "=\"Michael van Tellingen\",",
+   "purl": "pkg:pypi/author",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "author_email",
+   "group": "pypi",
+   "version": "=\"michaelvantellingen@gmail.com\",",
+   "purl": "pkg:pypi/author_email",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "install_requires",
+   "group": "pypi",
+   "version": "=[",
+   "purl": "pkg:pypi/install_requires",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "extras_require",
+   "group": "pypi",
+   "version": "={\"docs\": docs_require, \"test\": tests_require,},",
+   "purl": "pkg:pypi/extras_require",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "use_scm_version",
+   "group": "pypi",
+   "version": "=True,",
+   "purl": "pkg:pypi/use_scm_version",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "entry_points",
+   "group": "pypi",
+   "version": "={},",
+   "purl": "pkg:pypi/entry_points",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "package_dir",
+   "group": "pypi",
+   "version": "={\"\": \"src\"},",
+   "purl": "pkg:pypi/package_dir",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "packages",
+   "group": "pypi",
+   "version": "=find_packages(\"src\"),",
+   "purl": "pkg:pypi/packages",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "include_package_data",
+   "group": "pypi",
+   "version": "=True,",
+   "purl": "pkg:pypi/include_package_data",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "license",
+   "group": "pypi",
+   "version": "=\"MIT\",",
+   "purl": "pkg:pypi/license",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "classifiers",
+   "group": "pypi",
+   "version": "=[",
+   "purl": "pkg:pypi/classifiers",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  },
+  {
+   "type": "library",
+   "name": "zip_safe",
+   "group": "pypi",
+   "version": "=False,",
+   "purl": "pkg:pypi/zip_safe",
+   "scope": "required",
+   "evidence": {
+    "manifest": "setup.py"
+   }
+  }
+ ],
+ "component_count": 23,
+ "languages_detected": {
+  "Python": 1339,
+  "Make": 213,
+  "reStructuredText": 129,
+  "Text": 1
+ }
+}
